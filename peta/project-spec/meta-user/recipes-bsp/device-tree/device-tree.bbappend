@@ -1,6 +1,10 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:${SYSCONFIG_PATH}:"
 
-SRC_URI:append = " file://config file://system-user.dtsi"
+SRC_URI:append = " \
+    file://config \
+    file://system-user.dtsi \
+    file://ebaz4205.dtsi \
+    "
 DEPENDS:append = "${@' lopper-native' if d.getVar('SYSTEM_DTFILE') != '' else ''}"
 
 # We need the deployed output
