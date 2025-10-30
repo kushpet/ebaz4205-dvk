@@ -5,7 +5,6 @@
         ethernet0 = &gem0;
         serial0 = &uart1;
         mmc0 = &sdhci0;
-        nand0 = &nand0;
     };
 
     gpio-leds {
@@ -65,9 +64,5 @@
 
 &uart1 {
     status = "okay";
-};
-
-&nand0 {
-    status = "disabled";
 };
 
