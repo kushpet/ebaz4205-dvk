@@ -23,25 +23,6 @@
             default-state = "off";
         };
     };
-
-    gpio-keys {
-        compatible = "gpio-keys";
-        autorepeat;
-
-        s2 {
-            label = "s2";
-            gpios = <&gpio0 20 1>;
-            linux,code = <102>;
-            wakeup-source;
-        };
-
-        s3 {
-            label = "s3";
-            gpios = <&gpio0 32 1>;
-            linux,code = <116>;
-            wakeup-source;
-        };
-    };
 };
 
 &gem0 {
